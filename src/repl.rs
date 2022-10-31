@@ -1,5 +1,5 @@
 use crate::lexer::Lexer;
-use crate::token::TokenType;
+use crate::token::token::TokenType;
 use std::io::{stdin, stdout, Write};
 
 const PROMPT: &str = ">> ";

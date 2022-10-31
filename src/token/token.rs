@@ -7,7 +7,16 @@ pub struct Token {
     pub literal: String,
 }
 
-#[derive(Debug, PartialEq, EnumString)]
+impl Token {
+    pub fn default() -> Self {
+        Token {
+            token_type: TokenType::ILLEGAL,
+            literal: "".to_string(),
+        }
+    }
+}
+
+#[derive(Debug, PartialEq, EnumString, Clone, Copy)]
 pub enum TokenType {
     ILLEGAL,
     EOF,

@@ -1,4 +1,4 @@
-use crate::token::{Token, TokenType};
+use crate::token::token::{Token, TokenType};
 use std::str::FromStr;
 
 pub struct Lexer {
